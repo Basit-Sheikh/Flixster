@@ -13,6 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
+        android:textColor="@android:color/background_light"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -22,6 +23,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@id/ivPoster"
+        android:textColor="@android:color/background_light"
+        android:textStyle="italic"
         tools:text="Joker" />
 
     <TextView
@@ -32,5 +35,6 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@id/ivPoster"
+        android:textColor="@android:color/background_light"
         tools:text="Some description here" />
 </RelativeLayout>
