@@ -1,9 +1,9 @@
-# Flix
-Flix is an app that allows users to browse movies from the [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction).
+# Now Playing
+Now Playing is an app that allows users to browse movies from the [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction) that are currently playing in theaters.
 
 ---
 
-## Flix Part 1
+## Now Playing Part 1
 
 ### User Stories
 
