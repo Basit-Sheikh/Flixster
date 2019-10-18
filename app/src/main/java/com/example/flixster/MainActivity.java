@@ -7,10 +7,13 @@ import android.util.Log;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.example.flixster.models.Movie;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.List;
 
 import okhttp3.Headers;
 
@@ -32,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     JSONArray results = jsonObject.getJSONArray("results");
                     Log.i(TAG, "Results: " + results.toString());
+                    List<Movie> movies = Movie.fromJsonArray(results);
+                    Log.i(TAG, "Results: " + movies.size());
                 } catch (JSONException e) {
                     Log.e(TAG, "hit json exception");
                     e.printStackTrace();
