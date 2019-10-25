@@ -14,6 +14,7 @@ public class Movie {
     String title;
     String overview;
     String backdropPath;
+    double rating;
 
     public Movie(){} //empty contrsuctor needed by parceler library
 
@@ -23,6 +24,7 @@ public class Movie {
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
         backdropPath = jsonObject.getString("backdrop_path");
+        rating = jsonObject.getDouble("vote_average");
     }
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
@@ -46,6 +48,10 @@ public class Movie {
     }
     public String getBackdropPath() {
         return String.format("https://image.tmdb.org/t/p/w342/%s", backdropPath);
+    }
+
+    public double getRating() {
+        return rating;
     }
 }
 

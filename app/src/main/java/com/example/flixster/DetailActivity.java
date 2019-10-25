@@ -26,9 +26,10 @@ public class DetailActivity extends AppCompatActivity {
         tvOverview=findViewById(R.id.tvOverview);
         ratingBar=findViewById(R.id.ratingBar);
 
-        String title = getIntent().getStringExtra("title");
         Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
         tvTitle.setText(movie.getTitle());
+        tvOverview.setText(movie.getOverview());
+        ratingBar.setRating((float) movie.getRating());
 
     }
 }
