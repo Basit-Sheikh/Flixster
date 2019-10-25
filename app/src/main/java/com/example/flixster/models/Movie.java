@@ -10,6 +10,7 @@ import java.util.List;
 
 @Parcel
 public class Movie {
+    int movieID;
     String posterPath;
     String title;
     String overview;
@@ -20,6 +21,7 @@ public class Movie {
 
     public Movie(JSONObject jsonObject) throws JSONException {
 
+        movieID = jsonObject.getInt(("id"));
         posterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
@@ -33,6 +35,10 @@ public class Movie {
             movies.add(new Movie(movieJsonArray.getJSONObject(i)));
         }
         return movies;
+    }
+
+    public int getMovieID() {
+        return movieID;
     }
 
     public String getPosterPath() {
