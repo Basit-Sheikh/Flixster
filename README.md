@@ -23,8 +23,9 @@ Now Playing is an app that allows users to browse movies from the [The Movie Dat
 
 ### App Walkthough GIF
 
-<img src=https://github.com/Basit-Sheikh/Now-Playing/blob/master/walkthrough.gif width=250><br>
-<img src=https://github.com/Basit-Sheikh/Now-Playing/blob/master/walkthrough2.gif width=250><br>
+<img src=https://github.com/Basit-Sheikh/Now-Playing/blob/master/walkthrough.gif width=250>
+<img src=https://github.com/Basit-Sheikh/Now-Playing/blob/master/walkthrough2.gif height=250><br>
+
 
 ### Notes
 
